@@ -41,11 +41,11 @@ export default function UploadPage() {
 
   return (
     <section>
-      <form onSubmit={onSubmit} className="mx-auto max-w-lg space-y-3">
-        <Input name="name" placeholder="File Name" />
-        <UploadWidget name="file" />
-        <Button type="submit" disabled={isPending} className="w-full">
-          {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />} Submit
+      <form onSubmit={onSubmit} className='mx-auto max-w-lg space-y-3'>
+        <Input name='name' placeholder='File Name' />
+        <UploadWidget name='file' />
+        <Button type='submit' disabled={isPending} className='w-full'>
+          {isPending && <Loader2 className='mr-2 h-4 w-4 animate-spin' />} Submit
         </Button>
       </form>
     </section>

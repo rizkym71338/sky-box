@@ -23,7 +23,7 @@ interface AppLayoutProps {
 export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <ClerkProvider>
-      <html lang="en" suppressHydrationWarning>
+      <html lang='en' suppressHydrationWarning>
         <body className={cn('min-h-screen bg-gray-50 font-sans antialiased', fontSans.variable)}>{children}</body>
       </html>
     </ClerkProvider>

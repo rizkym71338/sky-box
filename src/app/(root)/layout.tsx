@@ -12,10 +12,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   if (!auth().userId) redirect('/sign-in')
 
   return (
-    <main className="overflow-x-hidden">
+    <main className='flex h-screen flex-1 overflow-x-hidden'>
       <TopbarLayout />
       <SidebarLayout />
-      <section className="container mt-[53px] py-3 max-sm:mb-[52px] sm:pl-[252px]">{children}</section>
+      <section className='container mt-[53px] py-3 max-sm:mb-[52px] sm:pl-[252px]'>{children}</section>
       <BottombarLayout />
       <Toaster />
     </main>

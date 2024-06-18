@@ -13,5 +13,7 @@ model File {
   clerkId   String
   name      String
   url       String
+  starreds  String[]
+  inTrash   Boolean @default(false)
   createdAt DateTime @default(now())
 }

@@ -10,7 +10,7 @@ export const BottombarLayout = () => {
   const pathname = usePathname()
 
   return (
-    <section className="fixed bottom-0 flex w-screen items-center border-t bg-white sm:hidden">
+    <section className='fixed bottom-0 flex w-screen items-center border-t bg-white sm:hidden'>
       {menus.map(({ href, label, Icon }, index) => (
         <Link
           key={index}
@@ -20,7 +20,7 @@ export const BottombarLayout = () => {
             pathname === href && 'text-green-600',
           )}
         >
-          <Icon className="h-4 w-4" /> {label}
+          <Icon className='h-4 w-4' /> {label}
         </Link>
       ))}
     </section>
